@@ -5,13 +5,12 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.contacto a:hover {
-    color: #fefefe;
-}
-
-i {
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+.fa-truck-moving ,.fa-bag-shopping ,
+.fa-location-pin,.fa-shop,.fa-location-pin,
+.fa-arrow-right{
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    align-items: center;
 }
 
 .nav {
@@ -24,6 +23,7 @@ i {
     text-transform: uppercase;
     border-bottom: #281908 0.3em solid;
     color: #281908;
+    z-index: 100;
 }
 
 .nav__titulo {
@@ -34,6 +34,7 @@ i {
 
 .nav__titulo:hover {
     color: #281908;
+    text-decoration: none;
 }
 
 .info {
@@ -52,9 +53,9 @@ i {
     background-color: #281908;
     border-radius: 0.4em 0.4em 0 0;
     color: #fefefe;
-    margin-top:2em;
-    padding: 1em;
+    margin-top: 2em;
     font-weight: bold;
+    padding: 1em;
     text-transform: uppercase;
     font-family: 'Dancing Script', cursive;
 }
@@ -62,15 +63,23 @@ i {
 .contenido__cuerpo {
     background-color: #fefefe;
     margin-bottom: 1em;
-    padding: 1em;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: #281908 0.3em solid;
+    padding: 1em;
 }
 
-.contenido__contactar{
-    margin-top: 3em;
+.contenido__card{
+    padding: 0;
+}
+
+.contenido__contactar {
+    margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.contenido__cuerpo-formulario{
+    padding: 1em;
 }
 .titulo {
     font-family: 'Dancing Script', cursive;
@@ -85,11 +94,17 @@ i {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    margin: auto;
+    margin: 1em auto;
     justify-content: center;
     display: block;
     text-align: center;
     align-items: center;
+    text-decoration: none;
+}
+
+.contacto a:hover {
+    color: #fefefe;
+    text-decoration: none;
 }
 
 .tienda {
@@ -110,6 +125,7 @@ i {
 .tienda:hover,
 .contacto:hover {
     color: #fefefe;
+    text-decoration: none;
 }
 
 .contacto a {
@@ -121,7 +137,7 @@ i {
     display: flex;
 }
 
-.lista__item{
+.lista__item {
     margin-right: 1em;
 }
 
@@ -136,10 +152,10 @@ i {
     color: #281908;
 }
 
-
 .contenido__contactar {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 label,
@@ -163,7 +179,8 @@ select {
     padding: 0.5em;
 }
 
-select,option{
+select,
+option {
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -179,7 +196,6 @@ textarea {
     border-radius: 0.2em;
     outline: none;
     padding: 0.5em;
-
 }
 
 .formulario__enviar {
@@ -202,47 +218,107 @@ textarea {
     justify-content: center;
 }
 
-
 @media(max-width:770px) {
-
     label,
     input,
     select,
-    textarea{
+    textarea {
         display: block;
         width: 100%;
         justify-content: center;
         margin-top: 1em;
     }
 
-    .contenido__contactar{
+    .contenido__contactar {
         display: block;
         justify-content: center;
-        margin: 2em auto;
+        margin: 4em auto;
     }
 
-    .contacto ,.tienda{
+    .contacto,
+    .tienda {
         margin-top: 1em;
-        width:90%;
+        width: 90%;
+        font-size: 0.8em;
     }
+
+    .card-title{
+        font-size: 0.95em;
+    }
+
+    .card-text{
+        font-size: 0.55em;
+    }
+
+    .contenido__texto{
+        font-size: 0.85em;
+    }
+}
+
+.button-card {
+    margin-top: 10em;
+}
+
+.card-text {
+    font-size: 0.8em;
 }
 
 .whatsapp {
     display: block;
     position: fixed;
-    bottom:4.5em;
+    bottom: 4.5em;
     right: 1.2em;
     cursor: pointer;
     height: 2.5em;
     margin-bottom: 1.5em;
-    }
+}
 
-.telegram{
+.telegram {
     display: block;
     position: fixed;
     bottom: 1em;
     right: 1.2em;
     cursor: pointer;
     height: 2.5em;
-    margin-bottom: 1.5em; 
+    margin-bottom: 1.5em;
+}
+
+.container__imagen {
+    display: block;
+    margin-top: 1em;
+    margin: auto;
+    justify-content: center;
+}
+
+.card-img-top {
+    height: 20em;
+    border-bottom: #281908 0.2em solid;
+}
+
+.card-text {
+    height: 10em;
+    margin-bottom: 2em;
+}
+
+.card-title {
+    color: #281908;
+    font-weight: bold;
+    height: 3em;
+}
+
+.button-card-button {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.card-body {
+    border: #fefefe 0.2em solid;
+    border-bottom: #281908 0.2em solid;
+}
+
+.subtitulo {
+    padding: 1em;
+    text-align: center;
+    color: #281908;
+    font-weight: bold;
 }
