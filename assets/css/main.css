@@ -312,11 +312,15 @@ textarea {
         margin: auto;
         min-width: 90%;
         margin-top: 1em;
-        min-height: 27em;
+        min-height: 20em;
     }
 
     .enlace__tienda{
         display: none;
+    }
+
+    .subtitulo{
+        font-size: 1em;
     }
 }
 
@@ -355,6 +359,10 @@ textarea {
     justify-content: center;
 }
 
+.card{
+    border: 0;
+}
+
 .card-img-top {
     height: 20em;
     border-bottom: #281908 0.2em solid;
@@ -386,6 +394,7 @@ textarea {
     text-align: center;
     color: #281908;
     font-weight: bold;
+    font-size:2.5m;
 }
 
 .contenido__productos {
