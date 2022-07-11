@@ -48,7 +48,7 @@
     </header>
     <main class="container">
         <article>
-            <img class="banner" src="https://tiendaelforastero.com.ar/images/banner.jpg">
+            <img class="banner" src="./images/banner.jpg">
         </article>
 
         <article class="info">
@@ -64,7 +64,7 @@
                     <label for="email"><i class="fa-solid fa-envelope"></i>correo electrónico</label>
                     <input name="email" id="email" type="email" value=""/>
                     <label for="celular"><i class="fa-solid fa-square-phone"></i> celular</label>
-                    <input name="celular" id="celular" type="tel" value=""/>
+                    <input name="celular" id="celular" type="tel" value="" required/>
                     <label form="tipo"><i class="fa-solid fa-magnifying-glass"></i> Tipo de consulta</label>
                     <select>
                         <option>Punto de venta</option>
@@ -76,7 +76,7 @@
 
                     <label for="consulta"><i class="fa-solid fa-comment"></i> consulta</label>
                     <textarea id="consulta" maxlength="300" name="consulta" required value=""></textarea>
-                    <button onclick="enviar()" class="formulario__enviar" type="submit"> Enviar <i
+                    <button id="enviar" class="formulario__enviar" type="submit"> Enviar <i
                             class="fa-solid fa-paper-plane"></i></button>
                 </form>
             </section>
