@@ -1,0 +1,415 @@
+.body {
+    font-size: 16px;
+    background-color: #F4F6F6;
+    font-family: 'Mukta', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.fa-truck-moving,
+.fa-bag-shopping,
+.fa-location-pin,
+.fa-shop,
+.fa-location-pin,
+.fa-arrow-right {
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    align-items: center;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 4em;
+    background-color: #fefefe;
+    top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: #281908 0.3em solid;
+    color: #281908;
+    z-index: 100;
+}
+
+.nav__titulo {
+    color: #281908;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.nav__titulo:hover {
+    color: #281908;
+    text-decoration: none;
+}
+
+.info {
+    margin-top: 1em;
+}
+
+.banner {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+.contenido__titulo {
+    height: 3em;
+    background-color: #281908;
+    border-radius: 0.4em 0.4em 0 0;
+    color: #fefefe;
+    margin-top: 2em;
+    font-weight: bold;
+    padding: 1em;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+}
+
+.contenido__cuerpo {
+    background-color: #fefefe;
+    margin-bottom: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: #281908 0.3em solid;
+    padding: 1em;
+}
+
+.contenido__card {
+    padding: 0;
+}
+
+.contenido__contactar {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.contenido__cuerpo-formulario {
+    padding: 1em;
+}
+
+.titulo {
+    font-family: 'Dancing Script', cursive;
+}
+
+.contacto {
+    background-color: #281908;
+    padding: 1em;
+    border-radius: 0.4em;
+    width: 40%;
+    color: #fefefe;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1em auto;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.enlace__tienda{
+    background-color: #281908;
+    color: #fefefe;
+    padding: 1em;
+    border-radius: 0.4em; 
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin-top: 1em;
+    text-decoration: none;
+}
+
+.enlace__tienda_2{
+    display: none;
+}
+
+.enlace__tienda:hover{
+    color: #fefefe;
+}
+
+.enlace__tienda_2:hover{
+    color: #fefefe;
+}
+
+
+.contacto a:hover {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.tienda {
+    background-color: #281908;
+    padding: 1em;
+    border-radius: 0.4em;
+    color: #fefefe;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    margin: auto;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    width: 40%;
+}
+
+.tienda:hover,
+.contacto:hover {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.contacto a {
+    color: #fefefe;
+    text-decoration: none;
+}
+
+.lista {
+    display: flex;
+}
+
+.lista__item {
+    margin-right: 1em;
+}
+
+.footer a {
+    color: #281908;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer a:hover {
+    color: #281908;
+}
+
+.contenido__contactar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+label,
+input,
+select {
+    display: block;
+    width: 50%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+input,
+select {
+    background-color: #F4F6F6;
+    border: 0;
+    border-radius: 0.2em;
+    border-bottom: 0.2em solid #281908;
+    height: 2.5em;
+    margin-top: 1em;
+    outline: none;
+    padding: 0.5em;
+}
+
+select,
+option {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+textarea {
+    display: block;
+    justify-content: center;
+    background-color: #F4F6F6;
+    height: 10em;
+    width: 50%;
+    border: 0;
+    border-bottom: 0.2em solid #281908;
+    border-radius: 0.2em;
+    outline: none;
+    padding: 0.5em;
+}
+
+.formulario__enviar {
+    background-color: #281908;
+    border: 0;
+    padding: 1em;
+    color: #fefefe;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1em;
+    border-radius: 0.3em;
+}
+
+.footer {
+    background-color: #fefefe;
+    padding: 1em;
+    border-top: 0.2em solid #281908;
+    display: block;
+    margin: auto;
+    justify-content: center;
+}
+
+@media(max-width:770px) {
+    label,
+    input,
+    select,
+    textarea {
+        display: block;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .contenido__productos-imagenes{
+        display: block;
+        margin:auto;
+        justify-content: center;
+        min-width: 90%;
+    }
+
+    .contenido__contactar {
+        display: block;
+        justify-content: center;
+        margin: 4em auto;
+    }
+
+    .contacto,
+    .tienda {
+        margin-top: 1em;
+        width: 90%;
+        font-size: 0.8em;
+    }
+
+    .enlace__tienda_2{
+        display: block;
+        background-color: #281908;
+        color: #fefefe;
+        padding: 1em;
+        font-size: 0.8em;
+        border-radius: 0.4em; 
+        margin: auto;
+        justify-content: center;
+        width: 80%;
+        list-style: none;
+        text-align: center;
+        margin-bottom:4em;
+        text-decoration: none;
+    }
+
+    .card-title {
+        font-size: 0.95em;
+    }
+
+    .card-text {
+        font-size: 0.55em;
+    }
+
+    .contenido__texto {
+        font-size: 0.85em;
+    }
+
+    .contenido__productos-imagen {
+        display: block;
+        justify-content: center;
+        margin: auto;
+        min-width: 90%;
+        margin-top: 1em;
+        min-height: 20em;
+    }
+
+    .enlace__tienda{
+        display: none;
+    }
+
+    .subtitulo{
+        font-size: 1em;
+    }
+}
+
+.button-card {
+    margin-top: 10em;
+}
+
+.card-text {
+    font-size: 0.8em;
+}
+
+.whatsapp {
+    display: block;
+    position: fixed;
+    bottom: 4.5em;
+    right: 1.2em;
+    cursor: pointer;
+    height: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.telegram {
+    display: block;
+    position: fixed;
+    bottom: 1em;
+    right: 1.2em;
+    cursor: pointer;
+    height: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.container__imagen {
+    display: block;
+    margin-top: 1em;
+    margin: auto;
+    justify-content: center;
+}
+
+.card{
+    border: 0;
+}
+
+.card-img-top {
+    height: 20em;
+    border-bottom: #281908 0.2em solid;
+}
+
+.card-text {
+    height: 10em;
+    margin-bottom: 2em;
+}
+
+.card-title {
+    color: #281908;
+    font-weight: bold;
+    height: 3em;
+}
+
+.button-card-button {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.card-body {
+    border: #fefefe 0.2em solid;
+    border-bottom: #281908 0.2em solid;
+}
+
+.subtitulo {
+    padding: 1em;
+    text-align: center;
+    color: #281908;
+    font-weight: bold;
+    font-size:2.5m;
+}
+
+.contenido__productos {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.contenido__productos-imagen {
+    width: 15em;
+    height: 15em;
+}
+
+.lista__productos{
+    width: 20em;
+}
